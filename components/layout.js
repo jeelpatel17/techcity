@@ -6,7 +6,7 @@ import styles from "./layout.module.css";
 
 const name = "Jeel Patel";
 const siteName = "TechCity";
-export const siteTitle = "TechCity | Your Everyday Tech Blog.";
+export const siteTitle = "TechCity | Every Tech Matters.";
 
 const myLoader = ({ src }) => {
   return `${src}`;
@@ -17,10 +17,7 @@ export default function Layout({ children, home }) {
     <div className={styles.container}>
       <Head>
         <link rel="icon" href="/favicon.ico" />
-        <meta
-          name="description"
-          content="Learn how to build a personal website using Next.js"
-        />
+        <meta name="description" content="TechCity | Every Tech Matters." />
         <meta
           property="og:image"
           content={`https://og-image.vercel.app/${encodeURI(
