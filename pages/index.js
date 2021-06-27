@@ -1,5 +1,6 @@
 import { getSortedPostsData } from "../lib/posts";
 import { Container, Row, Col } from "react-bootstrap";
+import React, { useState } from "react";
 import Image from "next/image";
 
 export async function getStaticProps() {
@@ -20,6 +21,21 @@ import Date from "../components/date";
 const siteTitle = "Welcome to TechCity!";
 
 export default function Home({ allPostsData }) {
+  const [elements, setElement] = useState([
+    {
+      id: 1,
+      src: "",
+    },
+    {
+      id: 2,
+      src: "https://source.unsplash.com/144x144",
+    },
+    {
+      id: 3,
+      src: "https://source.unsplash.com/144x144",
+    },
+  ]);
+  const [src, setSrc] = useState("");
   return (
     <Layout home style={{ minHeight: "100%", marginBottom: "-50px" }}>
       <Head>
@@ -60,6 +76,21 @@ export default function Home({ allPostsData }) {
           ))}
         </ul>
       </section>
+      <div>
+        {elements.length
+          ? elements.map((item) => (
+              <React.Fragment key={item.id}>
+                <Image
+                  src={item.src}
+                  height={144}
+                  // loader={myLoader}
+                  width={144}
+                  placeholder="blur"
+                />
+              </React.Fragment>
+            ))
+          : null}
+      </div>
       <footer align="center">Made with ❤️ & Next JS</footer>
     </Layout>
   );
