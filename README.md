@@ -1,1 +1,180 @@
-This is a starter template for [Learn Next.js](https://nextjs.org/learn).
+<!-- PROJECT SHIELDS -->
+<!--
+*** I'm using markdown "reference style" links for readability.
+*** Reference links are enclosed in brackets [ ] instead of parentheses ( ).
+*** See the bottom of this document for the declaration of the reference variables
+*** for contributors-url, forks-url, etc. This is an optional, concise syntax you may use.
+*** https://www.markdownguide.org/basic-syntax/#reference-style-links
+-->
+[![Contributors][contributors-shield]][contributors-url]
+[![Forks][forks-shield]][forks-url]
+[![Stargazers][stars-shield]][stars-url]
+[![Issues][issues-shield]][issues-url]
+[![MIT License][license-shield]][license-url]
+[![LinkedIn][linkedin-shield]][linkedin-url]
+
+
+
+<!-- PROJECT LOGO -->
+<br />
+<p align="center">
+  <a href="https://github.com/jeelpatel17/techcity">
+    <img src="https://avatars.githubusercontent.com/jeelpatel17" alt="Logo" width="80" height="80">
+  </a>
+
+  <h3 align="center">TechCity</h3>
+
+  <p align="center">
+    Hello beautiful folks! This is my personal blog where I write whenever I feel like writing a blog onto some topic, a POV to share, or just solving a tech-related problem!
+    <br />
+    <strong>Feel free to make your own branch for improving it more! Below are the instructions!</strong>
+    <br />
+    <br />
+    <a href="https://techcity.vercel.app">View Demo</a>
+    ·
+    <a href="https://github.com/jeelpatel17/techcity/issues">Report Bug</a>
+    ·
+    <a href="https://github.com/jeelpatel17/techcity/issues">Request Feature</a>
+  </p>
+</p>
+
+
+
+<!-- TABLE OF CONTENTS -->
+<details open="open">
+  <summary>Table of Contents</summary>
+  <ol>
+    <li>
+      <a href="#about-the-project">About The Project</a>
+      <ul>
+        <li><a href="#built-with">Built With</a></li>
+      </ul>
+    </li>
+    <li>
+      <a href="#getting-started">Getting Started</a>
+      <ul>
+        <li><a href="#prerequisites">Prerequisites</a></li>
+        <li><a href="#installation">Installation</a></li>
+      </ul>
+    </li>
+    <li><a href="#usage">Usage</a></li>
+    <li><a href="#roadmap">Roadmap</a></li>
+    <li><a href="#contributing">Contributing</a></li>
+    <li><a href="#license">License</a></li>
+    <li><a href="#contact">Contact</a></li>
+    <li><a href="#acknowledgements">Acknowledgements</a></li>
+  </ol>
+</details>
+
+
+
+<!-- ABOUT THE PROJECT -->
+## About The Project
+
+[![Product Name Screen Shot][product-screenshot]](https://example.com)
+
+TechCity | Every Tech Matters. — It is my personal blog which I made for brushing up my React skills and learning Next JS as well, also for populating my portfolio.
+
+Topics on which my blog is/will be filled up with:
+* Coding Problems & Solutions
+* Software installing guides
+* Self help & Neuroscience
+
+Of course, you can suggest me a topic for my next blog, as well as send your blog to get published as a *Guest Writer*!
+
+I'm adding as many functionalities/features that I can, if you want to contribute, jump in! We'll rock together!.
+
+### Built With
+
+Not much, sprinkled a little pixie dust, and garnished with love.
+* [Next JS](https://nextjs.org)
+* [NProgress](https://github.com/rstacruz/nprogress)
+* [React Bootstrap](https://react-bootstrap.github.io/)
+* [Markdown](https://guides.github.com/features/mastering-markdown/)
+* [Vercel](https://vercel.com)
+* [Jira](https://www.atlassian.com/software/jira)
+
+
+<!-- GETTING STARTED -->
+## Getting Started
+
+You can fork it or clone it with your separate branch, both ways will work just fine!
+
+### Prerequisites
+
+Latest version of npm is recommended, .
+* npm
+  ```sh
+  npm install npm@latest -g
+  ```
+
+### Installation
+
+1. You can use all three - Command Line/Terminal/Git Bash for cloning the repo.
+2. Clone the repo
+   ```sh
+   git clone https://github.com/jeelpatel17/techcity.git
+   ```
+3. Install NPM packages
+   ```sh
+   npm install
+   ```
+4. Checkout with your own private branch
+    ```sh
+    git checkout -b [your-branch-name]
+    ```
+5. Do Whatever you want with your local copy!
+
+
+## Contributing (Step-by-step)
+
+The backend is maintained very peacefully, and you don't have to worry about its hosting.
+- The blog is hosted upon Vercel itself, and you just need to push the changes to your branch
+- The repo moderators will lookout for potential merges if it is eligible
+- Then it'll give a link where everyone will be able to see changes that you've made without even merging it to the main branch! 
+- If the merge will be seem good, then it'll get merged, and deployed by Vercel itself, no efforts involved!
+
+
+<!-- CONTRIBUTING -->
+## Contributing (Quickly)
+
+Contributions are what make the open source community such an amazing place to be learn, inspire, and create. Any contributions you make are **greatly appreciated**.
+
+1. Fork the Project
+2. Create your Feature Branch (`git checkout -b feature/AmazingFeature`)
+3. Commit your Changes (`git commit -m 'Add some AmazingFeature'`)
+4. Push to the Branch (`git push origin feature/AmazingFeature`)
+5. Open a Pull Request
+
+
+
+<!-- LICENSE -->
+## License
+
+Distributed under the MIT License.
+
+
+
+<!-- CONTACT -->
+## Contact
+
+Jeel Patel - [@jeelpatel101](https://twitter.com/jeelpatel101) - jeelpateldev@gmail.com
+
+Project Link: [https://github.com/jeelpatel17/techcity](https://github.com/jeelpatel17/techcity)
+
+
+<!-- MARKDOWN LINKS & IMAGES -->
+<!-- https://www.markdownguide.org/basic-syntax/#reference-style-links -->
+[contributors-shield]: https://img.shields.io/github/contributors/othneildrew/Best-README-Template.svg?style=for-the-badge
+[contributors-url]: https://github.com/jeelpatel17/techcity/graphs/contributors
+[forks-shield]: https://img.shields.io/github/forks/othneildrew/Best-README-Template.svg?style=for-the-badge
+[forks-url]: https://github.com/jeelpatel17/techcity/network/members
+[stars-shield]: https://img.shields.io/github/stars/othneildrew/Best-README-Template.svg?style=for-the-badge
+[stars-url]: https://github.com/jeelpatel17/techcity/stargazers
+[issues-shield]: https://img.shields.io/github/issues/othneildrew/Best-README-Template.svg?style=for-the-badge
+[issues-url]: https://github.com/jeelpatel17/techcity/issues
+[license-shield]: https://img.shields.io/github/license/othneildrew/Best-README-Template.svg?style=for-the-badge
+[license-url]: https://github.com/othneildrew/Best-README-Template/blob/master/LICENSE.txt
+[linkedin-shield]: https://img.shields.io/badge/-LinkedIn-black.svg?style=for-the-badge&logo=linkedin&colorB=555
+[linkedin-url]: https://linkedin.com/in/jeelpatel101
+[product-screenshot]: images/screenshot.png
