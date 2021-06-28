@@ -53,7 +53,9 @@ export default function Home({ allPostsData }) {
           ))}
         </ul>
       </section>
-      <footer align="center">Made with ❤️ & Next JS</footer>
+      <footer align="center">
+        Made with ❤️ & Next JS | <Link href={`/about`}>About</Link>
+      </footer>
     </Layout>
   );
 }
