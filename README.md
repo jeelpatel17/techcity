@@ -139,7 +139,7 @@ Contributions are what make the open source community such an amazing place to b
 
 <!-- LICENSE -->
 ## License
-
+[Check License](https://github.com/jeelpatel17/techcity/blob/main/LICENSE.txt)
 Distributed under the MIT License.
 
 
@@ -163,7 +163,7 @@ Project Link: [https://github.com/jeelpatel17/techcity](https://github.com/jeelp
 [issues-shield]: https://img.shields.io/github/issues/othneildrew/Best-README-Template.svg?style=for-the-badge
 [issues-url]: https://github.com/jeelpatel17/techcity/issues
 [license-shield]: https://img.shields.io/github/license/othneildrew/Best-README-Template.svg?style=for-the-badge
-[license-url]: https://github.com/othneildrew/Best-README-Template/blob/master/LICENSE.txt
+[license-url]: https://github.com/jeelpatel17/techcity/blob/main/LICENSE.txt
 [linkedin-shield]: https://img.shields.io/badge/-LinkedIn-black.svg?style=for-the-badge&logo=linkedin&colorB=555
 [linkedin-url]: https://linkedin.com/in/jeelpatel101
 [product-screenshot]: images/screenshot.png
