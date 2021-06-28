@@ -95,10 +95,9 @@ I'm adding as many functionalities/features that I can, if you want to contribut
 Not much, sprinkled a little pixie dust, and garnished with love.
 * [Next JS](https://nextjs.org)
 * [NProgress](https://github.com/rstacruz/nprogress)
-* [React Bootstrap](https://react-bootstrap.github.io/)
+* [Bootstrap](https://getbootstrap.com)
 * [Markdown](https://guides.github.com/features/mastering-markdown/)
 * [Vercel](https://vercel.com)
-* [Jira](https://www.atlassian.com/software/jira)
 
 
 <!-- GETTING STARTED -->
