@@ -1,6 +1,12 @@
 import { getSortedPostsData } from "../lib/posts";
 import { Container, Row, Col } from "react-bootstrap";
-import Image from "next/image";
+import Layout from "../components/layout";
+import utilStyles from "../styles/utils.module.css";
+import Link from "next/link";
+import Date from "../components/date";
+import Header from "../components/header";
+
+const siteTitle = "Welcome to TechCity!";
 
 export async function getStaticProps() {
   const allPostsData = getSortedPostsData();
@@ -11,34 +17,11 @@ export async function getStaticProps() {
   };
 }
 
-import Head from "next/head";
-import Layout from "../components/layout";
-import utilStyles from "../styles/utils.module.css";
-import Link from "next/link";
-import Date from "../components/date";
-
-const siteTitle = "Welcome to TechCity!";
-// const imgSources = [
-//   "https://source.unsplash.com/164x130",
-//   "https://source.unsplash.com/144x144",
-//   "https://source.unsplash.com/1920x1080",
-// ];
-
-// let fetchImg = () => {
-//   for (let i = 0; i < imgSources.length; i++) {
-//     // console.log(imgSources[i]);
-//     return <Image src={imgSources[i]} height={100} width={100} />;
-//   }
-// };
-
 export default function Home({ allPostsData }) {
   return (
     <Layout home style={{ minHeight: "100%", marginBottom: "-50px" }}>
-      <Head>
-        <title>{siteTitle}</title>
-      </Head>
-      <section className={`${utilStyles.headingMd} ${utilStyles.padding1px}`}>
-        <h2 className={utilStyles.headingLg}>Blog</h2>
+      <Header siteTitle={siteTitle} />
+      <section className={`${utilStyles.headingMd}`}>
         <ul className={utilStyles.list}>
           {allPostsData.map(({ id, date, title, thumbnail }) => (
             <Container
@@ -48,14 +31,10 @@ export default function Home({ allPostsData }) {
               <Row>
                 <Link href={`/posts/${id}`}>
                   <Col
-                    className={"align-items-center"}
+                    className={`${utilStyles.blogCard}`}
                     style={{
                       backgroundImage: `linear-gradient(to bottom, 
-                      #000, rgba(0,0,0,0)), url(${thumbnail})`,
-                      height: "150px",
-                      borderRadius: "10px",
-                      backgroundPosition: "center",
-                      cursor: "pointer",
+                        rgba(0,0,0,0.7), rgba(0,0,0,0)), url(${thumbnail})`,
                     }}
                   >
                     <li className={utilStyles.listItem} key={id}>

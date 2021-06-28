@@ -1,9 +1,11 @@
 .heading2Xl {
-  font-size: 2.5rem;
-  line-height: 1.2;
-  font-weight: 800;
+  font-size: 3rem;
+  font-weight: 700;
   letter-spacing: -0.05rem;
   margin: 1rem 0 0;
+  background-image: linear-gradient(90deg, #007cf0, #00dfd8);
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
 }
 
 .headingXl {
@@ -50,6 +52,7 @@
 
 .lightText {
   color: #666;
+  font-weight: 100;
   display: inline;
 }
 
@@ -57,6 +60,14 @@
   border: 2px #fff solid;
   border-radius: 10px;
   margin: 10px 0;
+}
+
+.blogCard {
+  align-items: center;
+  height: 150px;
+  border-radius: 20px;
+  background-position: center;
+  cursor: pointer;
 }
 
 .anchors {
