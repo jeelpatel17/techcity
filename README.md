@@ -1,11 +1,3 @@
-<!-- PROJECT SHIELDS -->
-<!--
-*** I'm using markdown "reference style" links for readability.
-*** Reference links are enclosed in brackets [ ] instead of parentheses ( ).
-*** See the bottom of this document for the declaration of the reference variables
-*** for contributors-url, forks-url, etc. This is an optional, concise syntax you may use.
-*** https://www.markdownguide.org/basic-syntax/#reference-style-links
--->
 [![Contributors][contributors-shield]][contributors-url]
 [![Forks][forks-shield]][forks-url]
 [![Stargazers][stars-shield]][stars-url]
@@ -19,23 +11,23 @@
 <br />
 <p align="center">
   <a href="https://github.com/jeelpatel17/techcity">
-    <img src="https://avatars.githubusercontent.com/jeelpatel17" alt="Logo" width="80" height="80">
+    <img align="center" src="https://svgshare.com/i/Y_X.svg" alt="TechCity by Jeel Patel" height="100" width="1000" />
   </a>
 
-  <h3 align="center">TechCity</h3>
-
-  <p align="center">
-    Hello beautiful folks! This is my personal blog where I write whenever I feel like writing a blog onto some topic, a POV to share, or just solving a tech-related problem!
+  <strong align="center">Hello beautiful folks!</strong>
+   <p>
+    This is my personal blog where I write whenever I feel like writing a blog onto some topic, a POV to share, or just solving a tech-related problem!
     <br />
     <strong>Feel free to make your own branch for improving it more! Below are the instructions!</strong>
     <br />
     <br />
+     </p>
+     <p align="center">
     <a href="https://techcity.vercel.app">View Demo</a>
     ·
     <a href="https://github.com/jeelpatel17/techcity/issues">Report Bug</a>
     ·
     <a href="https://github.com/jeelpatel17/techcity/issues">Request Feature</a>
-  </p>
 </p>
 
 
@@ -57,12 +49,9 @@
         <li><a href="#installation">Installation</a></li>
       </ul>
     </li>
-    <li><a href="#usage">Usage</a></li>
-    <li><a href="#roadmap">Roadmap</a></li>
     <li><a href="#contributing">Contributing</a></li>
     <li><a href="#license">License</a></li>
     <li><a href="#contact">Contact</a></li>
-    <li><a href="#acknowledgements">Acknowledgements</a></li>
   </ol>
 </details>
 
@@ -103,7 +92,6 @@ You can fork it or clone it with your separate branch, both ways will work just 
 ### Prerequisites
 
 Latest version of npm is recommended, .
-* npm
   ```sh
   npm install npm@latest -g
   ```
@@ -126,7 +114,8 @@ Latest version of npm is recommended, .
 5. Do Whatever you want with your local copy!
 
 
-## Contributing (Step-by-step)
+### Contributing
+(Step-by-step)
 
 The backend is maintained very peacefully, and you don't have to worry about its hosting.
 - The blog is hosted upon Vercel itself, and you just need to push the changes to your branch
