@@ -4,6 +4,8 @@ import Head from "next/head";
 import Image from "next/image";
 import Date from "../../components/date";
 import utilStyles from "../../styles/utils.module.css";
+import React, { Component } from "react";
+import Disqus from "disqus-react";
 
 const thumbnailLoader = ({ src }) => {
   return `${src}`;
@@ -41,6 +43,13 @@ export default function Post({ postData }) {
     }
   }
 
+  const disqusShortname = "techcity-1";
+  const disqusConfig = {
+    url: "http://localhost:3000/posts/[id].js",
+    identifier: `${postData.id}`,
+    title: `${postData.title}`,
+  };
+
   return (
     <Layout>
       <Head>
@@ -63,6 +72,12 @@ export default function Post({ postData }) {
           placeholder="blur"
         />
         <div dangerouslySetInnerHTML={{ __html: postData.contentHtml }} />
+        <div className="article-container">
+          <Disqus.DiscussionEmbed
+            shortname={disqusShortname}
+            config={disqusConfig}
+          />
+        </div>
       </article>
     </Layout>
   );
