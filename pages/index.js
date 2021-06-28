@@ -1,6 +1,5 @@
 import { getSortedPostsData } from "../lib/posts";
 import { Container, Row, Col } from "react-bootstrap";
-import React, { useState } from "react";
 import Image from "next/image";
 
 export async function getStaticProps() {
@@ -19,23 +18,20 @@ import Link from "next/link";
 import Date from "../components/date";
 
 const siteTitle = "Welcome to TechCity!";
+// const imgSources = [
+//   "https://source.unsplash.com/164x130",
+//   "https://source.unsplash.com/144x144",
+//   "https://source.unsplash.com/1920x1080",
+// ];
+
+// let fetchImg = () => {
+//   for (let i = 0; i < imgSources.length; i++) {
+//     // console.log(imgSources[i]);
+//     return <Image src={imgSources[i]} height={100} width={100} />;
+//   }
+// };
 
 export default function Home({ allPostsData }) {
-  const [elements, setElement] = useState([
-    {
-      id: 1,
-      src: "",
-    },
-    {
-      id: 2,
-      src: "https://source.unsplash.com/144x144",
-    },
-    {
-      id: 3,
-      src: "https://source.unsplash.com/144x144",
-    },
-  ]);
-  const [src, setSrc] = useState("");
   return (
     <Layout home style={{ minHeight: "100%", marginBottom: "-50px" }}>
       <Head>
@@ -65,7 +61,9 @@ export default function Home({ allPostsData }) {
                     <li className={utilStyles.listItem} key={id}>
                       <a style={{ color: "#fff!important" }}>{title}</a>
                       <br />
-                      <small style={{ color: "#eee!important" }}>
+                      <small
+                        style={{ color: "#eee!important", fontSize: ".9rem" }}
+                      >
                         <Date dateString={date} />
                       </small>
                     </li>
@@ -76,21 +74,6 @@ export default function Home({ allPostsData }) {
           ))}
         </ul>
       </section>
-      <div>
-        {elements.length
-          ? elements.map((item) => (
-              <React.Fragment key={item.id}>
-                <Image
-                  src={item.src}
-                  height={144}
-                  // loader={myLoader}
-                  width={144}
-                  placeholder="blur"
-                />
-              </React.Fragment>
-            ))
-          : null}
-      </div>
       <footer align="center">Made with ❤️ & Next JS</footer>
     </Layout>
   );
