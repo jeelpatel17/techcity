@@ -1,12 +1,7 @@
 import Head from "next/head";
-import Image from "next/image";
-import utilStyles from "../styles/utils.module.css";
 import Link from "next/link";
 import styles from "./layout.module.css";
-import Header from "./header";
 
-const name = "Jeel Patel";
-const siteName = "TechCity";
 export const siteTitle = "TechCity | Every Tech Matters.";
 
 export default function Layout({ children, home }) {

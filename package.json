@@ -15,6 +15,7 @@
     "next": "^10.0.0",
     "nprogress": "^0.2.0",
     "react": "17.0.1",
+    "react-animated-cursor": "^2.2.0",
     "react-bootstrap": "^1.6.1",
     "react-dom": "17.0.1",
     "remark": "^13.0.0",

@@ -1,9 +1,12 @@
 import Layout from "../../components/layout";
 import { getAllPostIds, getPostData } from "../../lib/posts";
 import Header from "../../components/header";
-import React from "react";
 import Disqus from "disqus-react";
 import Content from "../../components/content";
+// for cursor
+import React from "react";
+import AnimatedCursor from "react-animated-cursor";
+import dynamic from "next/dynamic";
 
 // Assigning props to postData
 export async function getStaticProps({ params }) {
@@ -32,12 +35,21 @@ export default function Post({ postData }) {
     identifier: `${postData.id}`,
     title: `${postData.title}`,
   };
-
+  const AnimatedCursor = dynamic(() => import("react-animated-cursor"), {
+    ssr: false,
+  });
   return (
     <Layout>
       {/* Blog Header */}
       <Header siteTitle={postData.title} />
-
+      <AnimatedCursor
+        color="65,105,225"
+        innerSize={12}
+        outerSize={24}
+        outerAlpha={0.2}
+        innerScale={0.4}
+        outerScale={4}
+      />
       {/* Blog Content */}
       <Content
         blogTitle={postData.title}
