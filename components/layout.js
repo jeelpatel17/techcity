@@ -13,6 +13,10 @@ export default function Layout({ children, home }) {
           property="og:image"
           content={`https://raw.githubusercontent.com/jeelpatel17/techcity/main/public/images/screenstabbed.jpg`}
         />
+        <meta
+          name="google-site-verification"
+          content="8VJBJfVPCua_pYuvuJWayZ_4wxT64-GxBem-XMoNtio"
+        />
         <meta name="og:title" content={siteTitle} />
         <meta name="twitter:card" content="summary_large_image" />
         <meta
