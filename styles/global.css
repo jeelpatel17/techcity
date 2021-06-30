@@ -19,15 +19,6 @@ a {
   text-decoration: none !important;
 }
 
-a:hover {
-  text-decoration: underline;
-}
-
-img {
-  max-width: 100%;
-  display: block;
-}
-
 footer {
   padding: 5px 0 60px;
   margin-top: 70px;
