@@ -2,14 +2,31 @@ import Header from "../components/header";
 import Layout from "../components/layout";
 import styles from "../components/layout.module.css";
 import Image from "next/image";
+// for cursor
+import React from "react";
+import AnimatedCursor from "react-animated-cursor";
+import dynamic from "next/dynamic";
 
 const myLoader = ({ src }) => {
   return `${src}`;
 };
 
 export default function About() {
+  // for cursor
+  const AnimatedCursor = dynamic(() => import("react-animated-cursor"), {
+    ssr: false,
+  });
   return (
     <>
+      {/* for cursor */}
+      <AnimatedCursor
+        color="65,105,225"
+        innerSize={12}
+        outerSize={24}
+        outerAlpha={0.2}
+        innerScale={0.4}
+        outerScale={4}
+      />
       <br />
       <br />
       <br />

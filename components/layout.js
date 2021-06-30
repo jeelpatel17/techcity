@@ -9,15 +9,26 @@ export default function Layout({ children, home }) {
     <div className={styles.container}>
       <Head>
         <link rel="icon" href="/favicon.ico" />
-        <meta name="description" content="TechCity | Every Tech Matters." />
         <meta
           property="og:image"
-          content={`https://og-image.vercel.app/${encodeURI(
-            siteTitle
-          )}.png?theme=light&md=0&fontSize=75px&images=https%3A%2F%2Fassets.vercel.com%2Fimage%2Fupload%2Ffront%2Fassets%2Fdesign%2Fnextjs-black-logo.svg`}
+          content={`https://raw.githubusercontent.com/jeelpatel17/techcity/main/public/images/screenstabbed.jpg`}
+        />
+        <meta
+          name="google-site-verification"
+          content="8VJBJfVPCua_pYuvuJWayZ_4wxT64-GxBem-XMoNtio"
         />
         <meta name="og:title" content={siteTitle} />
         <meta name="twitter:card" content="summary_large_image" />
+        <meta
+          name="description"
+          content="A Personal Blog by Jeel Patel, with number of features like loading transitions, commenting, and circular cursor. It is an open source blog, anyone can write blog in it."
+        />
+        <meta
+          property="og:description"
+          content="A Personal Blog by Jeel Patel, with number of features like loading transitions, commenting, and circular cursor. It is an open source blog, anyone can write blog in it."
+        />
+        <meta property="og:url" content="https://techcity.vercel.app/" />
+        <meta property="og:type" content="website" />
       </Head>
       <main>{children}</main>
       {!home && (
